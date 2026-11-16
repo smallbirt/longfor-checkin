@@ -1,0 +1,13 @@
+# longfor-checkin managed PostgreSQL network override
+services:
+  checkin:
+    environment:
+      DATABASE_URL: ${DATABASE_URL:?请先运行 PostgreSQL 接入脚本}
+      PG_POOL_MAX: ${PG_POOL_MAX:-5}
+    networks:
+      - default
+      - checkin_pg
+networks:
+  checkin_pg:
+    external: true
+    name: longfor-checkin-pg

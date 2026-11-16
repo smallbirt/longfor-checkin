@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f8f8">
+  <meta name="description" content="每日签到 · 多程序、多账号微信小程序交互原型。所有数据均为本机演示数据。">
+  <title>每日签到 · 小程序原型</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230d7b70'/%3E%3Cpath d='m17 33 10 10 21-23' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <aside class="desktop-intro" aria-label="原型介绍">
+    <div class="intro-brand"><span class="brand-symbol">✓</span> 每日签到</div>
+    <span class="eyebrow">WECHAT MINI PROGRAM · PROTOTYPE</span>
+    <h1>每天的小事，<br>都安排好了。</h1>
+    <p>一个地方，管理不同程序、<br>不同账号的每日签到。</p>
+    <div class="intro-features"><span>01 <b>多程序，统一管理</b></span><span>02 <b>多账号，各自安排</b></span><span>03 <b>有结果，也有提醒</b></span></div>
+    <div class="intro-foot"><i></i> 可点击体验 · 模拟数据 · 不执行真实签到</div>
+  </aside>
+  <div class="phone-shell">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="app-header">
+      <button id="header-back" class="icon-button" aria-label="返回上一页" hidden></button>
+      <div class="header-title" id="header-title">每日签到</div>
+      <div class="wechat-capsule" aria-hidden="true"><span>•••</span><i></i><span class="capsule-circle"></span></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <nav id="tabbar" class="tabbar" aria-label="主导航"></nav>
+    <div class="demo-label">交互原型 · 仅演示数据</div>
+  </div>
+  <aside class="desktop-note"><div class="note-orbit">✓</div><strong>不止一个账号，<br>也不止一种签到。</strong><p>试试添加第二个龙湖 App，<br>再为它设置独立的计划。</p><span>390px 移动端设计</span></aside>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <noscript>此交互原型需要启用 JavaScript。所有操作均为本机演示，不会执行真实签到。</noscript>
+</body>
+</html>

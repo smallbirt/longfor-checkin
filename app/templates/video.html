@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}操作视频 · 每日签到{% endblock %}
+{% block extra_head %}<link rel="stylesheet" href="/static/video.css">{% endblock %}
+{% block content %}
+<section class="intro"><div><p class="eyebrow">视频演示</p><h1>操作视频</h1><p class="muted">小程序签到、抓包记录筛选、HAR 导入与状态确认。约 2 分 49 秒。</p></div><a class="button-link secondary" href="/help">查看图文手册</a></section>
+<section class="card video-panel" aria-label="操作演示播放器"><video id="operation-video" controls playsinline preload="metadata" poster="/static/tutorial/poster.jpg" width="480" height="1042" aria-label="小程序抓包与 HAR 导入操作视频"><source src="/static/tutorial/checkin-tutorial.mp4" type="video/mp4">当前浏览器无法直接播放，请使用下方链接打开或下载视频。</video><div class="video-caption"><p>点击播放，可使用播放器的全屏按钮放大观看。登录画面已隐藏，请使用你自己的本站账号。</p><a class="button-link secondary" href="/static/tutorial/checkin-tutorial.mp4" download="每日签到-操作视频.mp4">下载视频</a></div></section>
+{% endblock %}

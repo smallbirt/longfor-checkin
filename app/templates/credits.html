@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}积分与名额 · 每日签到{% endblock %}
+{% block extra_head %}<script defer src="/static/credits.js?v=20261027"></script><link rel="stylesheet" href="/static/credits.css?v=20261027">{% endblock %}
+{% block content %}
+<section class="intro"><div><p class="eyebrow">CREDITS & AUTOMATION</p><h1>积分与自动打卡名额</h1><p class="muted">龙湖 App、小程序合计使用名额。购买时扣一次积分，每日打卡不扣分。</p></div><a class="text-link" href="/accounts">管理我的签到 →</a></section>
+<div id="credits-overview" class="credits-overview" aria-live="polite"><p>正在读取积分与名额…</p></div>
+<section class="card panel"><div class="history-heading"><div><h2>我的积分流水</h2><p class="muted">保留发放、扣减、扩容后的余额与名额。</p></div><button id="credits-refresh" type="button" class="secondary">刷新权益</button></div><div id="credit-ledger"></div></section>
+<dialog id="purchase-dialog" aria-labelledby="purchase-title"><h2 id="purchase-title">增加 1 个自动打卡名额</h2><div id="purchase-summary"></div><p class="hint">确认后永久增加 1 个名额。暂停签到账号会释放占用，已购名额保留。</p><p id="purchase-error" class="inline-error" role="alert" hidden></p><div class="actions"><button id="purchase-cancel" type="button" class="secondary">取消</button><button id="purchase-confirm" type="button" class="primary">确认扣除积分</button></div></dialog>
+{% endblock %}
